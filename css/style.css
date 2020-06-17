@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+* {
+    padding: 0;
+    margin : 0;
+}
+
+.m-f {
+    font-family   : 'Aclonica', sans-serif;
+    text-transform: uppercase;
+}
+
+body {
+    background-image     : url(../images/back-img.jpg);
+    background-size      : cover;
+    background-attachment: fixed;
+    position             : relative;
+}
+
+main {
+    position: absolute;
+    top     : 0;
+    left    : 0;
+    width   : 100%;
+}
+
+.container {
+    width : 70%;
+    margin: 0 auto;
+}
+
+.header {
+    height     : 100vh;
+    color      : #ffffff;
+    line-height: 50px;
+}
+
+.header-content {
+    padding-top: 40vh;
+    text-align : center;
+}
+
+.header-content h1,
+.intro-content h1,
+.contact-section h1 {
+    font-size: 42px;
+}
+
+.header-content h2 {
+    line-height: 100px;
+}
+
+.header-content h2 span {
+    color: #f1c11a;
+
+}
+
+.btn {
+    background-color: transparent;
+    border          : 3px solid #ffffff;
+    padding         : 15px 35px;
+    font-weight     : bolder;
+    text-decoration : none;
+    color           : #ffffff;
+    margin-right    : 15px;
+    transition      : all 400ms ease-in-out;
+}
+
+.btn-fill {
+    background-color: #ffffff;
+    color           : #000000;
+}
+
+.btn-fill:hover {
+    background-color: #f1c11a;
+    border-color    : transparent;
+}
+
+.btn-trans:hover {
+    background-color: #f1c11a;
+    color           : #000000;
+    border-color    : transparent;
+}
+
+.intro {
+    background-color: #ffffff;
+    padding         : 15vh 0;
+}
+
+.intro-content {
+    min-height: 50vh;
+    display   : flex;
+    flex-wrap : wrap;
+}
+
+.intro-text p {
+    text-align   : justify;
+    color        : #828282;
+    line-height  : 30px;
+    padding-top  : 10px;
+    margin-bottom: 75px;
+}
+
+.intro-content div {
+    width: 50%;
+}
+
+.intro-text p {
+    text-align : justify;
+    color      : #828282;
+    line-height: 30px;
+}
+
+.services {
+    background-color: #f1c11a;
+    padding         : 22vh 0 12vh 0;
+    clip-path       : polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    margin-top      : -15vh;
+}
+
+.service-content {
+    display  : flex;
+    flex-wrap: wrap;
+}
+
+.bucket {
+    width : 25%;
+    margin: 0px 2%;
+    color : #ffffff;
+}
+
+.bucket p {
+    color      : #000000;
+    text-align : justify;
+    line-height: 25px;
+}
+
+.contact {
+    background-color: #ffffff;
+    padding         : 12vh 0 16vh 0;
+    text-align      : center;
+}
+
+.contact h1 {
+    margin-bottom: 15px;
+}
+
+input[type='text'],
+input[type=email],
+textarea {
+    width       : 70%;
+    padding     : 12px;
+    border-color: 1px solid #cccccc;
+}
+
+.contact-section div {
+    padding: 10px 3%;
+}
+
+.btn-submit {
+    background-color: #000000;
+    color           : #ffffff;
+}
+
+.btn-submit:hover {
+    background-color: #f1c11a;
+    border-color    : transparent;
+    color           : #000000;
+}
+
+footer {
+    background-color: #f1c11a;
+    clip-path       : polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    margin-top      : -10vh;
+    text-align      : center;
+    padding-top     : 15vh;
+    padding-bottom  : 30px;
+}
+
+/*------------------------------------------------------------------------------*/
+/*                    width : 1200px
+/*------------------------------------------------------------------------------*/
+
+@media (min-width: 1200px) {}
+
+/*------------------------------------------------------------------------------*/
+/*                    width : 991px
+/*------------------------------------------------------------------------------*/
+@media (min-width: 991px) and (max-width: 1200px) {
+    .intro-text p {
+        text-align : justify;
+        color      : #828282;
+        line-height: 25px;
+    }
+
+    .services {
+        background-color: #f1c11a;
+        padding         : 22vh 0 12vh 0;
+        clip-path       : polygon(0 0, 12% 0, 50% 13%, 92% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+        margin-top      : -18vh;
+    }
+
+    .bucket {
+        width : 29%;
+        margin: 0px 2%;
+        color : #ffffff;
+    }
+}
+
+
+
+/*------------------------------------------------------------------------------*/
+/*                    Width : 767px
+/*------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .header-content h2 {
+        font-size  : 20px;
+        margin     : 15px 0 30px 0;
+        line-height: 40px;
+    }
+
+    .header-content h1,
+    .intro-content h1,
+    .contact-section h1 {
+        font-size: 28px;
+    }
+
+    .intro-img {
+        margin-bottom: 25px;
+    }
+
+    .intro {
+        background-color: #ffffff;
+        padding         : 10vh 0;
+        min-height      : 50vh;
+    }
+
+    .intro-content div {
+        width: 100%;
+    }
+
+    .services {
+        padding  : 22vh 0 12vh 0;
+        clip-path: polygon(0 0, 15% 0, 50% 5%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+
+    .service-content {
+        display    : block;
+        margin-top : -15vh;
+        padding-top: 1px;
+    }
+
+    .bucket {
+        width         : 100%;
+        padding-bottom: 5px;
+        margin        : 35px 0 0 0px;
+    }
+
+    .contact {
+        padding: 12vh 0 16vh 0;
+
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .container {
+        width : 82%;
+        margin: 0 auto;
+    }
+
+    .intro-content div {
+        width: 100%;
+    }
+}
+
+/*------------------------------------------------------------------------------*/
+/*                    width : 452px
+/*------------------------------------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+    .header-content h1,
+    .intro-content h1,
+    .contact-section h1 {
+        font-size  : 26px;
+        text-align : center;
+        line-height: 35px;
+    }
+
+    .intro-img {
+        margin-bottom: 25px;
+    }
+
+    .header-content h2 {
+        font-size  : 16px;
+        line-height: 28px !important;
+        padding    : 30px !important;
+    }
+
+    .btn {
+        padding     : 9px 16px;
+        width       : 50%;
+        margin-right: 3px;
+    }
+
+    .intro {
+        background-color: #ffffff;
+        padding         : 10vh 0;
+        min-height      : 50vh;
+    }
+
+    .services {
+        padding  : 4vh 0 10vh 0;
+        clip-path: polygon(0 0, 15% 0, 50% 6%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+
+    .bucket {
+        margin-bottom: 15px;
+
+    }
+
+    input[type='text'],
+    input[type=email],
+    textarea {
+        width       : 84%;
+        padding     : 12px;
+        border-color: 1px solid #cccccc;
+    }
+
+    .contact {
+        padding: 10vh 0 15vh 0;
+
+    }
+
+    .service-content {
+        padding-top: 20px;
+    }
+
+    .bucket {
+        width         : 100%;
+        padding-bottom: 5px;
+        margin        : 25px 0 0 0px;
+    }
+
+    .btn-submit {
+        width  : 60%;
+        padding: 15px;
+    }
+}
+
+/*------------------------------------------------------------------------------*/
+/*                    width : 250px
+/*------------------------------------------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+
+    .header-content h1,
+    .intro-content h1,
+    .contact-section h1 {
+        font-size  : 24px;
+        text-align : center;
+        line-height: 30px;
+    }
+
+    .intro-img {
+        margin-bottom: 20px;
+    }
+
+    .header-content h2 {
+        font-size  : 14px;
+        line-height: 26px !important;
+        padding    : 30px !important;
+    }
+
+    .btn {
+        padding     : 7px 14px;
+        width       : 50%;
+        margin-right: 2px;
+    }
+
+    .intro {
+        padding   : 10vh 0;
+        min-height: 50vh;
+    }
+
+
+    .services {
+        padding  : 4vh 0 10vh 0;
+        clip-path: polygon(0 0, 15% 0, 50% 2%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+
+    .bucket {
+        margin-bottom: 15px;
+
+    }
+
+    input[type='text'],
+    input[type=email],
+    textarea {
+        width       : 84%;
+        padding     : 12px;
+        border-color: 1px solid #cccccc;
+    }
+
+    .contact {
+        padding   : 10vh 0 15vh 0;
+        text-align: center;
+    }
+
+    .service-content {
+        padding-top: 20px;
+    }
+
+    .bucket {
+        width         : 100%;
+        padding-bottom: 5px;
+        margin        : 25px 0 0 0px;
+    }
+
+    .btn-submit {
+        width  : 60%;
+        padding: 15px;
+    }
+}
